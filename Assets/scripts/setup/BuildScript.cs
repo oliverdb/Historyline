@@ -21,7 +21,7 @@ public class BuildScript{
 		[MenuItem ("Custom/CI/Build Web")]
 		static void PerformWebBuild ()
         {
-                 string target_dir = APP_NAME;
+                 string target_dir = APP_NAME + ".unity3d";
                  GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.WebPlayer,BuildOptions.None);
         }
 
