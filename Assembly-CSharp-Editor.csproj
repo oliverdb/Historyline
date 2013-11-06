@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\BuildScript.cs" />
+     <None Include="Assets\Assets\StrangeIoC\scripts\strange\extensions\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">

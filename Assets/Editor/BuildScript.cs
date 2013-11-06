@@ -8,8 +8,8 @@ public class BuildScript{
 
 	 static string[] SCENES = FindEnabledEditorScenes();
 
-        static string APP_NAME = "YourProject";
-        static string TARGET_DIR = "target";
+        static string APP_NAME = "historyline";
+        static string TARGET_DIR = "builds";
 
         [MenuItem ("Custom/CI/Build Mac OS X")]
         static void PerformMacOSXBuild ()
@@ -22,7 +22,7 @@ public class BuildScript{
 		static void PerformWebBuild ()
         {
                  string target_dir = APP_NAME + ".unity3d";
-                 GenericBuild(SCENES, TARGET_DIR + "/" + target_dir, BuildTarget.WebPlayer,BuildOptions.None);
+                 GenericBuild(SCENES, TARGET_DIR + "/web/" + target_dir, BuildTarget.WebPlayer,BuildOptions.None);
         }
 
 	private static string[] FindEnabledEditorScenes() {
