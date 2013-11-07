@@ -16,6 +16,12 @@ public class TestContext : MVCSContext {
 
     protected override void mapBindings()
     {		 
-		mediationBinder.Bind<TestView>().To<TestMediator>();	
+		mediationBinder.Bind<TestView>().To<TestMediator>();
+		
+		
+		//Command binding
+		commandBinder.Bind(TestEvent.TEST_VIEW_INIT_EVENT).To<TestCommand>();
+		
+		//commandBinder.Bind(ContextEvent.START).To<StartCommand>().Once();
 	}
 }

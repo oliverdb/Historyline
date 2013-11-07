@@ -140,7 +140,9 @@
      <Compile Include="Assets\Assets\StrangeIoC\scripts\strange\framework\impl\BinderException.cs" />
      <Compile Include="Assets\Assets\StrangeIoC\scripts\strange\framework\impl\Binding.cs" />
      <Compile Include="Assets\Assets\StrangeIoC\scripts\strange\framework\impl\SemiBinding.cs" />
+     <Compile Include="Assets\Test\Commands\TestCommand.cs" />
      <Compile Include="Assets\Test\Contexts\TestContext.cs" />
+     <Compile Include="Assets\Test\Contexts\TestEvent.cs" />
      <Compile Include="Assets\Test\TestContextView.cs" />
      <Compile Include="Assets\Test\Views\TestMediator.cs" />
      <Compile Include="Assets\Test\Views\TestView.cs" />
