@@ -28,21 +28,21 @@ public class BuildScript{
 		static void DoNunitTest(){
 			  var arguments = System.Environment.GetCommandLineArgs();
     		  Debug.Log("GetCommandLineArgs: {0}" +  String.Join(", ", arguments));	
-/*		
-		Invalid option: -projectPath
-Invalid option: -quit
-Invalid option: -batchmode
-Invalid option: -executeMethod
-	*/
-		string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod"};
-		List<string> commandsfiltered = new List<string>();
-		foreach(string command in arguments){ //filter out all unity commands
-			foreach(var unityc in unityCommands){
-				if(command.Contains(unityc))
-					continue;
-			}
-			commandsfiltered.Add(command);
-		}		
+
+				string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod","openfile"};
+				List<string> commandsfiltered = new List<string>();
+		
+				foreach(string command in arguments){ //filter out all unity commands
+					bool illegalCommand = false;
+					foreach(var unityc in unityCommands){
+						if(command.ToLower().Contains(unityc))
+							illegalCommand = true;;
+					}
+					if(!illegalCommand)
+						commandsfiltered.Add(command);
+				}
+				Debug.Log("AFTER FILTER: {0}" +  String.Join(", ", commandsfiltered.ToArray()));
+			
 			NUnitLiteUnityRunner.RunTests(commandsfiltered.ToArray());
 		}
 
