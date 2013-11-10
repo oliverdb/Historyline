@@ -1,21 +1,30 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Test\Contexts\TestContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Internal\Filters\AndFilter.cs">
     <Files>
       <File FileName="Assets\Test\Views\TestView.cs" Line="1" Column="1" />
-      <File FileName="Assets\Assets\StrangeIoC\scripts\strange\extensions\mediation\impl\View.cs" Line="1" Column="1" />
       <File FileName="Assets\Test\Views\TestMediator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Assets\StrangeIoC\scripts\strange\extensions\context\impl\Context.cs" Line="1" Column="1" />
-      <File FileName="Assets\Assets\StrangeIoC\scripts\strange\extensions\context\impl\ContextView.cs" Line="1" Column="1" />
-      <File FileName="Assets\Assets\StrangeIoC\scripts\strange\extensions\context\impl\MVCSContext.cs" Line="334" Column="21" />
-      <File FileName="Assets\Test\Contexts\TestContext.cs" Line="28" Column="1" />
-      <File FileName="Assets\Test\TestContextView.cs" Line="3" Column="1" />
-      <File FileName="Assets\Test\Contexts\TestEvent.cs" Line="6" Column="42" />
-      <File FileName="Assets\Test\Commands\TestCommand.cs" Line="3" Column="2" />
+      <File FileName="Assets\Test\Contexts\TestContext.cs" Line="1" Column="1" />
+      <File FileName="Assets\Test\TestContextView.cs" Line="1" Column="1" />
+      <File FileName="Assets\Test\Contexts\TestEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets\Test\Commands\TestCommand.cs" Line="1" Column="1" />
+      <File FileName="Assets\Test\Unit\SomeCSharpTests.cs" Line="1" Column="1" />
+      <File FileName="Assets\Test\Unit\CSharpTestDriver.cs" Line="1" Column="1" />
+      <File FileName="Assets\Editor\BuildScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitLiteUnityRunner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\NUnitLite\NunitTextUnityTestUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Constraints\ConstraintFactory.cs" Line="283" Column="12" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Constraints\ConstraintExpression.cs" Line="336" Column="12" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Is.cs" Line="143" Column="12" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Constraints\EmptyDirectoryConstraint.cs" Line="57" Column="27" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Constraints\NUnitEqualityComparer.cs" Line="338" Column="17" />
+      <File FileName="Assets\Plugins\NUnitLite\NUnitlie-1.0.0\framework\Internal\Filters\AndFilter.cs" Line="37" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\obi\Documents\GitHub\Historyline\Assets\Editor\BuildScript.cs" line="34" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

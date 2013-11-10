@@ -4,6 +4,7 @@ using UnityEditor;
 using System;
 using System.Collections.Generic;
 
+
 public class BuildScript{
 
 	 static string[] SCENES = FindEnabledEditorScenes();
@@ -28,7 +29,7 @@ public class BuildScript{
 		static void DoNunitTest(){
 			  var arguments = System.Environment.GetCommandLineArgs();
 				if(Application.isEditor){
-					arguments = new string[]{"nunitargs","\"-out:nunit_out.txt -result:historyline-test-res.xml Assembly-CSharp\""};
+					arguments = new string[]{"nunitargs","\"-out:nunit_out.txt -result:historyline-test-res.xml -format:nunit2 Assembly-CSharp\""};
 				}
 		
     		  Debug.Log("GetCommandLineArgs: " +  String.Join(", ", arguments));
@@ -39,34 +40,11 @@ public class BuildScript{
 						nunitArgs = arguments[i+1].Replace("\"","").Split(' ');
 						Debug.Log("Nunit args Application.dataPathfound: " + String.Join(",", nunitArgs));
 					}
-				}
-		
-		//Application.platform == RuntimePlatform.WindowsPlayer
-		
-				/*string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod","openfile"};
-				List<string> commandsfiltered = new List<string>();
-		
-				foreach(string command in arguments){ //filter out all unity commands
-					bool illegalCommand = false;
-					foreach(var unityc in unityCommands){
-						if(command.ToLower().Contains(unityc.ToLower()))
-							illegalCommand = true;;
-					}
-					if(!illegalCommand)
-						commandsfiltered.Add(command);
-				}*/
-		//		Debug.Log("AFTER FILTER:" +  String.Join(", ", commandsfiltered.ToArray()));
-		
-			/*
-			 * - starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll, for buildtarget 6
-- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
-- starting compile Library/ScriptAssemblies/Assembly-CSharp.dll, for buildtarget 6
-- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
-- starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll, for buildtarget 6
-- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-			 * 
-			 * */
+				}		
 			NUnitLiteUnityRunner.RunTests(nunitArgs);
+		
+			
+	
 		}
 
 	private static string[] FindEnabledEditorScenes() {

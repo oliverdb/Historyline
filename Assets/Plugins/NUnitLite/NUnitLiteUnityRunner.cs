@@ -70,7 +70,8 @@ public static class NUnitLiteUnityRunner
         using (var sw = new StringWriter())
         {
            if(commandArgs != null){
-				var runner = new NunitTextUnityTestUI(sw);
+				//var runner = new NunitTextUnityTestUI(sw);
+				var runner = new TextUI();
             	runner.Execute(commandArgs);
 			}else{
 				var runner = new NUnitStreamUI(sw);

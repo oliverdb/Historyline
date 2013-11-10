@@ -53,9 +53,6 @@
      <Compile Include="Assets\Test\Views\TestMediator.cs" />
      <Compile Include="Assets\Test\Views\TestView.cs" />
      <None Include="Assets\Plugins\StrangeIoC\strange\extensions\ReadMe.txt" />
-     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\CHANGES.txt" />
-     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\LICENSE.txt" />
-     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\README.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">

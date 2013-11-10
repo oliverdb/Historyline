@@ -132,7 +132,8 @@ public class NunitTextUnityTestUI  {
 
         private void ExploreTests()
         {
-            XmlNode testNode = runner.LoadedTest.ToXml(true);
+     
+		NUnit.Framework.Api.XmlNode testNode = runner.LoadedTest.ToXml(true);
 
             string listFile = commandLineOptions.ExploreFile;
             XmlTextWriter testWriter = listFile != null && listFile.Length > 0

@@ -1,27 +1,23 @@
-﻿<test-suite type="Assembly" id="1015" name="Assembly-CSharp" fullname="Assembly-CSharp" testcasecount="6" result="Skipped" label="Ignored" time="0.001" total="6" passed="5" failed="0" inconclusive="0" skipped="1" asserts="9">
-  <properties>
-    <property name="_PID" value="11956" />
-    <property name="_APPDOMAIN" value="Unity Child Domain" />
-  </properties>
-  <reason>
-    <message><![CDATA[One or more child tests were ignored]]></message>
-  </reason>
-  <test-suite type="TestFixture" id="1008" name="SomeCSharpTests" fullname="Test.SomeCSharpTests" testcasecount="6" result="Skipped" label="Ignored" time="0.001" total="6" passed="5" failed="0" inconclusive="0" skipped="1" asserts="9">
-    <reason>
-      <message><![CDATA[One or more child tests were ignored]]></message>
-    </reason>
-    <test-case id="1009" name="Add" fullname="Test.SomeCSharpTests.Add" result="Passed" time="0.000" asserts="1" />
-    <test-case id="1014" name="AllSource01MembersLessThen5" fullname="Test.SomeCSharpTests.AllSource01MembersLessThen5" result="Passed" time="0.000" asserts="3" />
-    <test-case id="1010" name="ExpectAnException" fullname="Test.SomeCSharpTests.ExpectAnException" result="Passed" time="0.000" asserts="0" />
-    <test-case id="1011" name="IgnoredTest" fullname="Test.SomeCSharpTests.IgnoredTest" result="Skipped" label="Ignored" time="0.000" asserts="0">
-      <properties>
-        <property name="_SKIPREASON" value="ignored test" />
-      </properties>
-      <reason>
-        <message><![CDATA[ignored test]]></message>
-      </reason>
-    </test-case>
-    <test-case id="1012" name="SourcesAreEqual" fullname="Test.SomeCSharpTests.SourcesAreEqual" result="Passed" time="0.000" asserts="3" />
-    <test-case id="1013" name="SourcesAreSubsetOfEachOther" fullname="Test.SomeCSharpTests.SourcesAreSubsetOfEachOther" result="Passed" time="0.001" asserts="2" />
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:/Users/obi/Documents/GitHub/Historyline/Library/ScriptAssemblies/Assembly-CSharp.dll" total="5" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-11-10" time="20:46:34">
+  <environment nunit-version="1.0.0.0" clr-version="2.0.50727.1433" os-version="Microsoft Windows NT 6.1.7601.0" platform="Win32NT" cwd="C:\Users\obi\Documents\GitHub\Historyline" machine-name="T430SW7OBI" user="obi" user-domain="T430SW7OBI" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:/Users/obi/Documents/GitHub/Historyline/Library/ScriptAssemblies/Assembly-CSharp.dll" executed="True" result="Success" success="True" time="0.0250015" asserts="0">
+    <properties>
+      <property name="_APPDOMAIN" value="Unity Child Domain" />
+      <property name="_PID" value="11956" />
+    </properties>
+    <results>
+      <test-suite type="TestFixture" name="SomeCSharpTests" executed="True" result="Success" success="True" time="0.0230013" asserts="0">
+        <results>
+          <test-case name="Add" executed="True" result="Success" success="True" time="0.0090005" asserts="0" />
+          <test-case name="AllSource01MembersLessThen5" executed="True" result="Success" success="True" time="0.0050002" asserts="0" />
+          <test-case name="ExpectAnException" executed="True" result="Success" success="True" time="0.0010001" asserts="0" />
+          <test-case name="SourcesAreEqual" executed="True" result="Success" success="True" time="0.0020001" asserts="0" />
+          <test-case name="SourcesAreSubsetOfEachOther" executed="True" result="Success" success="True" time="0.0010001" asserts="0" />
+        </results>
+      </test-suite>
+    </results>
   </test-suite>
-</test-suite>
+</test-results>
