@@ -26,7 +26,24 @@ public class BuildScript{
         }
 		[MenuItem ("Custom/CI/Do Unit Test")]
 		static void DoNunitTest(){
-			NUnitLiteUnityRunner.RunTests(System.Environment.GetCommandLineArgs());
+			  var arguments = System.Environment.GetCommandLineArgs();
+    		  Debug.Log("GetCommandLineArgs: {0}" +  String.Join(", ", arguments));	
+/*		
+		Invalid option: -projectPath
+Invalid option: -quit
+Invalid option: -batchmode
+Invalid option: -executeMethod
+	*/
+		string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod"};
+		List<string> commandsfiltered = new List<string>();
+		foreach(string command in arguments){ //filter out all unity commands
+			foreach(var unityc in unityCommands){
+				if(command.Contains(unityc))
+					continue;
+			}
+			commandsfiltered.Add(command);
+		}		
+			NUnitLiteUnityRunner.RunTests(commandsfiltered.ToArray());
 		}
 
 	private static string[] FindEnabledEditorScenes() {
