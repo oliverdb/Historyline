@@ -37,7 +37,7 @@ public class BuildScript{
 				for(int i=0;i<arguments.Length;i++){
 					if(arguments[i].Contains("nunitargs")){
 						nunitArgs = arguments[i+1].Replace("\"","").Split(' ');
-						Debug.Log("Nunit args Application.dataPathfound: " + nunitArgs);
+						Debug.Log("Nunit args Application.dataPathfound: " + String.Join(",", nunitArgs));
 					}
 				}
 		

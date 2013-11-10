@@ -43,12 +43,12 @@ namespace Test
         }
 
 
-        [Test]
+      /*  [Test]
         [Ignore("ignored test")]
         public void IgnoredTest()
         {
             throw new Exception();
-        }
+        }*/
 
 
         [Test]
