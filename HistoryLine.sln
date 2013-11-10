@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{5E72A4F1-E211-9FB0-A5BC-71BC5E668AF2}") = "Historyline", "Assembly-CSharp-firstpass.csproj", "{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}"
+EndProject
 Project("{5E72A4F1-E211-9FB0-A5BC-71BC5E668AF2}") = "Historyline", "Assembly-CSharp.csproj", "{05AEDB25-0244-BEA5-7336-3B7AC26A079F}"
 EndProject
 Project("{5E72A4F1-E211-9FB0-A5BC-71BC5E668AF2}") = "Historyline", "Assembly-CSharp-Editor.csproj", "{68E4A899-FB4D-17E7-0974-27F89330675E}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{05AEDB25-0244-BEA5-7336-3B7AC26A079F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{05AEDB25-0244-BEA5-7336-3B7AC26A079F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05AEDB25-0244-BEA5-7336-3B7AC26A079F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -23,7 +29,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																															GlobalSection(MonoDevelopProperties) = preSolution
+																																					GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -24,6 +24,10 @@ public class BuildScript{
                  string target_dir = APP_NAME + ".unity3d";
                  GenericBuild(SCENES, TARGET_DIR + "/web/" + target_dir, BuildTarget.WebPlayer,BuildOptions.None);
         }
+		[MenuItem ("Custom/CI/Do Unit Test")]
+		static void DoNunitTest(){
+			NUnitLiteUnityRunner.RunTests(System.Environment.GetCommandLineArgs());
+		}
 
 	private static string[] FindEnabledEditorScenes() {
 		List<string> EditorScenes = new List<string>();

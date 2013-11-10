@@ -45,11 +45,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\BuildScript.cs" />
-     <None Include="Assets\Assets\StrangeIoC\scripts\strange\extensions\ReadMe.txt" />
+     <None Include="Assets\Plugins\StrangeIoC\strange\extensions\ReadMe.txt" />
+     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\CHANGES.txt" />
+     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\LICENSE.txt" />
+     <None Include="Assets\Plugins\NUnitLite\NUnitLite-0.7.0\README.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{05AEDB25-0244-BEA5-7336-3B7AC26A079F}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{930F4FB4-A2A7-E9EC-2BF3-B7A83FA2E5E1}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
