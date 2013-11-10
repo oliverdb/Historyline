@@ -47,7 +47,7 @@ public class NunitTextUnityTestUI  {
         /// </summary>
         /// <param name="args">An array of arguments</param>
         /// <param name="assembly">assembly to be tested</param>
-        public void Execute(string[] args,Assembly assembly)
+        public void Execute(string[] args)
         {
             // NOTE: Execute must be directly called from the
             // test assembly in order for the mechanism to work.
@@ -70,14 +70,14 @@ public class NunitTextUnityTestUI  {
 
                 try
                 {
-                  /*  foreach (string name in commandLineOptions.Parameters)
-                        assemblies.Add(Assembly.Load(name));*/
+                    foreach (string name in commandLineOptions.Parameters)
+                        assemblies.Add(Assembly.Load(name));
 
-                  //  if (assemblies.Count == 0)
-                        assemblies.Add(assembly);
+                   // if (assemblies.Count == 0)
+                     //   assemblies.Add(assembly);
 
                     // TODO: For now, ignore all but first assembly
-                   // Assembly assembly = assemblies[0] as Assembly;
+                    Assembly assembly = assemblies[0] as Assembly;
 
                     if (!runner.Load(assembly, loadOptions))
                     {

@@ -1,0 +1,12 @@
+NUNit Framework 0.0.0 
+Copyright (C) 2012, Charlie Poole
+
+Runtime Environment -
+    OS Version: Microsoft Windows NT 6.1.7601.0
+  Mono Version: 2.0.50727.1433
+
+6 Tests : 0 Failures, 0 Errors, 1 Not Run
+
+Tests Not Run:
+
+1) IgnoredTest (Test.SomeCSharpTests.IgnoredTest) : ignored test

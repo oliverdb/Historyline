@@ -59,18 +59,19 @@ public static class NUnitLiteUnityRunner
 
     private static void RunTests(Assembly assembly,string[] commandArgs)
     {
-        if (assembly == null)
+        Debug.Log("Running Assembly: " + assembly.FullName);
+		if (assembly == null)
             throw new ArgumentNullException("assembly");
 
-        if (Tested.Contains(assembly))
-            return;
+      //  if (Tested.Contains(assembly))
+        //    return;
         Tested.Add(assembly);
 
         using (var sw = new StringWriter())
         {
            if(commandArgs != null){
 				var runner = new NunitTextUnityTestUI(sw);
-            	runner.Execute(commandArgs,assembly);
+            	runner.Execute(commandArgs);
 			}else{
 				var runner = new NUnitStreamUI(sw);
 				var resultSummary = runner.Summary;

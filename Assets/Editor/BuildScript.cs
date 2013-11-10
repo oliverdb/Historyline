@@ -27,23 +27,46 @@ public class BuildScript{
 		[MenuItem ("Custom/CI/Do Unit Test")]
 		static void DoNunitTest(){
 			  var arguments = System.Environment.GetCommandLineArgs();
-    		  Debug.Log("GetCommandLineArgs: {0}" +  String.Join(", ", arguments));	
-
-				string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod","openfile"};
+				if(Application.isEditor){
+					arguments = new string[]{"nunitargs","\"-out:nunit_out.txt -result:historyline-test-res.xml Assembly-CSharp\""};
+				}
+		
+    		  Debug.Log("GetCommandLineArgs: " +  String.Join(", ", arguments));
+				var nunitArgs =new string[]{ "Assembly-CSharp","/out:nunit_out.txt","/result:historyline-test-res.xml"};
+			  //find the nunit parameter
+				for(int i=0;i<arguments.Length;i++){
+					if(arguments[i].Contains("nunitargs")){
+						nunitArgs = arguments[i+1].Replace("\"","").Split(' ');
+						Debug.Log("Nunit args Application.dataPathfound: " + nunitArgs);
+					}
+				}
+		
+		//Application.platform == RuntimePlatform.WindowsPlayer
+		
+				/*string[] unityCommands = new string[]{"projectPath","quit","batchmode","executeMethod","openfile"};
 				List<string> commandsfiltered = new List<string>();
 		
 				foreach(string command in arguments){ //filter out all unity commands
 					bool illegalCommand = false;
 					foreach(var unityc in unityCommands){
-						if(command.ToLower().Contains(unityc))
+						if(command.ToLower().Contains(unityc.ToLower()))
 							illegalCommand = true;;
 					}
 					if(!illegalCommand)
 						commandsfiltered.Add(command);
-				}
-				Debug.Log("AFTER FILTER: {0}" +  String.Join(", ", commandsfiltered.ToArray()));
-			
-			NUnitLiteUnityRunner.RunTests(commandsfiltered.ToArray());
+				}*/
+		//		Debug.Log("AFTER FILTER:" +  String.Join(", ", commandsfiltered.ToArray()));
+		
+			/*
+			 * - starting compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll, for buildtarget 6
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+- starting compile Library/ScriptAssemblies/Assembly-CSharp.dll, for buildtarget 6
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+- starting compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll, for buildtarget 6
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+			 * 
+			 * */
+			NUnitLiteUnityRunner.RunTests(nunitArgs);
 		}
 
 	private static string[] FindEnabledEditorScenes() {
